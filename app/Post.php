@@ -2,9 +2,10 @@
 
 namespace App;
 
+
+use Illuminate\Database\Eloquent\Model;
 use App\User;
 use App\Comment;
-use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
@@ -13,6 +14,8 @@ class Post extends Model
     }
 
     public function user(){
-        return $this->belongTo(Comment::Class,'user_id');
+        return $this->belongsTo(User::class, 'user_id');
+
+        
     }
 }
