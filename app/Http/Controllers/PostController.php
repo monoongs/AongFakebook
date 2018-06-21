@@ -8,7 +8,7 @@ use App\Post;
 class PostController extends Controller
 {
     public function newPost(request $request){
-    $post = new Post;;
+    $post = new Post;
     $post->user_id = $request->id;
     $post->body=$request->posttext;
 
