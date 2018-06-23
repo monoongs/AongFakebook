@@ -15,4 +15,13 @@ class PostController extends Controller
     $post->save();
     return back();
     }
+
+    public function deletePost(request $request){
+        $del_post = Post::find($request->id);
+        foreach($del_post->comment as $comment){
+            $comment->delete();
+        }
+        $del_post->delete();
+        return back();
+    }
 }

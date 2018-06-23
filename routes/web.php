@@ -20,4 +20,5 @@ Auth::routes();
 Route::get('/', 'HomeController@index')->name('home');
 Route::post('/post/new','PostController@newPost');
 Route::post('/comment','CommentController@newComment');
+Route::delete('/post/delete','PostController@deletePost');
 

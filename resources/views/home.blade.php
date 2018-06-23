@@ -36,15 +36,15 @@
                             <div class="col-md-11">
                                 <h5 class="card-title">{{$post->user->name}} {{$post->user->surname}}</h5>
                             </div>
-                            {{-- <form class="col-md-1" action="/post/delete" method="post">
+                            <form class="col-md-1" action="/post/delete" method="post">
                                 @csrf
                                 <input type="hidden" name="id" value="{{$post->id}}" />
                                 <input type="hidden" name="_method" value="delete" />
                                 <button type="submit" onclick="return confirm('Are you sure?')" class="btn btn-sm btn-light">x</button>
-                            </form> --}}
+                            </form>
                         </div>
                         <p class="card-text">{{$post->body}}</p>
-                        {{-- <a href="/post/likes/{{$post->id}}">{{$post->likes}} Likes</a> --}}
+                        
 
                         <form class="form-group row" action="/comment" method="post" style="margin: 0.5rem 0;">
                             <div class="col-md-10">
