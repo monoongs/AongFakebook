@@ -50,8 +50,8 @@
                             <div class="col-md-10">
                                 <input class="form-control" type="text" name="comment" placeholder="Comment here…" required/>
                             </div>
-                            <input type="hidden" name="post_id" value="{{$post->id}}" />
-                            <input type="hidden" name="user_id" value="{{Auth::user()->id}}" />
+                            <input type="hidden" name="post_id" value="{{$post->id}}" /> <!-- อันนี้ ส่ง post id-->
+                            <input type="hidden" name="user_id" value="{{Auth::user()->id}}" /> 
                             @csrf
                             <button type="submit" class="btn btn-success">comment</button>
                         </form>
