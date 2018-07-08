@@ -1,3 +1,4 @@
+
 <?php
 
 /*
@@ -32,4 +33,4 @@ Route::get('/link', function(){
     return view('linktest');
 });
 
-Route::get('/profile','ProfileController@showProfile');
+ Route::get('/profile/{user}','ProfileController@showProfile');

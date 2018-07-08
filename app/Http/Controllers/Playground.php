@@ -9,4 +9,8 @@ class playground extends Controller
     public function getPlayground(){
         return view("playground");
     }
+
+    public function testQuery(){
+        
+    }
 }
