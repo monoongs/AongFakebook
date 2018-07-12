@@ -33,4 +33,4 @@ Route::get('/link', function(){
     return view('linktest');
 });
 
- Route::get('/profile/{user}','ProfileController@showProfile');
+ Route::get('/profile/{id}/{user}','ProfileController@showProfile');

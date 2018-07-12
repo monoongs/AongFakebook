@@ -34,7 +34,7 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-11">
-                            <h5 class="card-title"><a href="/profile/{{$post->user->name." ".$post->user->surname}}">{{$post->user->name}} {{$post->user->surname}}</a></h5>
+                                <h5 class="card-title"><a href="/profile/{{$post->user_id}}/{{$post->user->name." ".$post->user->surname}}">{{$post->user->name}} {{$post->user->surname}}</a></h5>
                             </div>
                             <form class="col-md-1" action="/post/delete" method="post">
                                 @csrf
@@ -65,7 +65,7 @@
                         @endif
                     </div>
                 </div>
-            @endforeach
+                @endforeach
                 
             </div>
         </div>
