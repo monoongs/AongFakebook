@@ -8,7 +8,7 @@
                     <div class="card-header" style="text-align:center"> {{$user}} </div>
                     
                     
-                    <div class="card-body">
+                    {{-- <div class="card-body">
                         <form action="/post/new" method="post">
                             @csrf
                             <input type="hidden" name="id" value="{{ Auth::user()->id }}">
@@ -19,7 +19,7 @@
                                 <input type="submit" class="btn btn-success" value="post"/>
                             </div>
                         </form>
-                    </div>
+                    </div> --}}
 
                     @foreach ($posts as $post)
                         <div class="card" style="margin:0.5rem 0";>
